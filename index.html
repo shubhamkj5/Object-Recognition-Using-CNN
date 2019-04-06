@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CNN for Object Detection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HTML5 website template">
+    <meta name="keywords" content="global, template, html, sass, jquery">
+    <meta name="author" content="Shubham Jain">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+
+    
+</head>
+
+<body>
+
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+        <a class="device-notification--logo" href="index.html">
+            <img src="assets/img/logo.png" alt="CNN">
+            <p>Convolutional Neural Networks-Object Detection Applications</p>
+        </a>
+        <p class="device-notification--message">Object Detection has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
+
+    <div class="perspective effect-rotate-left">
+        <div class="container">
+            <div class="outer-nav--return"></div>
+            <div id="viewport" class="l-viewport">
+                <div class="l-wrapper">
+                    <header class="header">
+                        <a class="header--logo" href="index.html">
+                            <img src="assets/img/logo.png" alt="Global">
+                            <p>Object Detection Implementations- CNN</p>
+                        </a>
+
+                        <div class="header--nav-toggle">
+                            <span></span>
+                        </div>
+                    </header>
+                    <nav class="l-side-nav">
+                        <ul class="side-nav">
+                            <li class="is-active"><span>Home</span></li>
+                            <li><span>Applications</span></li>
+                            <li><span>Facial Emotion Detection</span></li>
+                            <li><span>Sight Prediction</span></li>
+                            <li><span>About</span></li>
+                        </ul>
+                    </nav>
+                    <ul class="l-main-content main-content">
+                        <li class="l-section section section--is-active">
+                            <div class="intro">
+                                <div class="intro--banner">
+                                    <h1>Object Detection-<br>Deep Convolutional<br>Neural Networks </h1>
+                                    <button class="cta">About
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                            <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                                <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                            </g>
+                                        </svg>
+                                        <span class="btn-background"></span>
+                                    </button>
+                                    <img src="assets/img/introduction-visual.png" alt="Welcome" height="70%" width="55%">
+                                </div>
+                                <div class="intro--options">
+                                    <a href="#0">
+                                        <h3>Designed &amp; Developed by</h3>
+                                        <h1>Shubham Jain</h1>
+                                    </a>
+                                    <!--<a href="#0">
+                  <h3>Fantasy interactive</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>
+                <a href="#0">
+                  <h3>Paul &amp; shark</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>-->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="l-section section">
+                            <div class="work">
+                                <h2>Selected Application</h2>
+                                <div class="work--lockup">
+                                    <ul class="slider">
+                                        <li class="slider--item slider--item-left">
+                                            <a href="#p1">
+                                                <div class="slider--item-image">
+                                                    <img src="assets/img/work-victory.jpg" alt="EmotionDetection">
+                                                </div>
+                                                <p class="slider--item-title">Emotion Detection</p>
+                                                <p class="slider--item-description">Facial Emotion detection trains images to predict what mood the person in front of camera has based on various facial points generated by Convolutional Neural Network</p>
+                                            </a>
+                                        </li>
+                                        <li class="slider--item slider--item-center">
+                                            <a href="#0">
+                                                <div class="slider--item-image">
+                                                    <img src="assets/img/work-metiew-smith.jpg" alt="SightPrediction">
+                                                </div>
+                                                <p class="slider--item-title">Sight Prediction</p>
+                                                <p class="slider--item-description">Implementation of object detection which predicts where a person in front of camera is looking at by analysing and training eye image.</p>
+                                            </a>
+                                        </li>
+                                        <li class="slider--item slider--item-right">
+                                            <a href="#0">
+                                                <div class="slider--item-image">
+                                                    <img src="assets/img/work-alex-nowak.jpg" alt="Base Object Prediction">
+                                                </div>
+                                                <p class="slider--item-title">Object Prediction</p>
+                                                <p class="slider--item-description">This code implements recognising of objects in front of webacm which uses a pretrained coco-ssd model. This is implemented in Python</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="slider--prev">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                            <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                                <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="slider--next">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                            <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                                <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="l-section section">
+                            <div class="emotion-container" id="emotion-container">
+                                <div class="EmotionDetection">
+                                    <div class="about--banner">
+
+                                        <div class="emotion-player emotion-flex">
+                                            <div class="emotion-kit">
+                                                <div id="emotion-laugh" class="emotion-kit-comps">
+                                                    <img id="emoticon-laugh" src="assets/img/laugh.gif" />
+                                                </div>
+                                                <div id="emotion-excited" class="emotion-kit-comps">
+                                                    <img id="emoticon-excited" src="assets/img/excited.gif" />
+                                                </div>
+                                                <div id="emotion-sad" class="emotion-kit-comps">
+                                                    <img id="emoticon-sad" src="assets/img/sad.gif" />
+                                                </div>
+                                                <div id="emotion-angry" class="emotion-kit-comps">
+                                                    <img id="emoticon-angry" src="assets/img/angry.gif" />
+                                                </div>
+                                                <div id="emotion-sleep" class="emotion-kit-comps">
+                                                    <img id="emoticon-sleep" src="assets/img/sleep.gif" />
+                                                </div>
+                                            </div>
+                                           <div class="emotion-buttons">
+                                                <button onclick="startWebcam()">Start</button>
+                                                <button onclick="train()">Train</button>
+                                                <button onclick="predictPlay()">Play</button>
+                                                <button onclick="stopWebcam()">Stop</button>
+                                            </div>
+                                                 <table>
+                                            <tr>
+                                            
+                                                <td><div class="emotion-live-cam">
+                                                <div>
+                                                    <video id="main-stream-video" width="200px" height="200px"></video>
+                                                </div>
+
+                                            </div>
+                                                </td>
+                                                  <td><div class="emotion-controller emotion-flex" id="emotion-controller">
+                                                
+                                                <!--- Buttons ends here -->
+                                                <!--- User acquire starts here -->
+                                                <div class="emotion-acquire">
+                                                    <div class="emotion-acquire-outer">
+                                                        <div class="emotion-acquire-inner" id="sample-laugh" onclick="captureSample(this.id, 0)">
+                                                            <div class="emotion-acquire-cam">
+                                                                <img id="image-laugh" />
+                                                            </div>
+                                                            <p>Add 🤣</p>
+                                                        </div>
+                                                        <p id="count-laugh">0 samples</p>
+                                                    </div>
+                                                    <div class="emotion-acquire-outer">
+                                                        <div class="emotion-acquire-inner" id="sample-excited" onclick="captureSample(this.id, 1)">
+                                                            <div class="emotion-acquire-cam">
+                                                                <img id="image-excited" />
+                                                            </div>
+                                                            <p>Add 😲</p>
+                                                        </div>
+                                                        <p id="count-excited">0 samples</p>
+                                                    </div>
+                                                    <div class="emotion-acquire-outer">
+                                                        <div class="emotion-acquire-inner" id="sample-sad" onclick="captureSample(this.id, 2)">
+                                                            <div class="emotion-acquire-cam">
+                                                                <img id="image-sad" />
+                                                            </div>
+                                                            <p>Add 😰</p>
+                                                        </div>
+                                                        <p id="count-sad">0 samples</p>
+                                                    </div>
+                                                    <div class="emotion-acquire-outer">
+                                                        <div class="emotion-acquire-inner" id="sample-angry" onclick="captureSample(this.id, 3)">
+                                                            <div class="emotion-acquire-cam">
+                                                                <img id="image-angry" />
+                                                            </div>
+                                                            <p>Add 😡</p>
+                                                        </div>
+                                                        <p id="count-angry">0 samples</p>
+                                                    </div>
+                                                    <div class="emotion-acquire-outer">
+                                                        <div class="emotion-acquire-inner" id="sample-sleep" onclick="captureSample(this.id, 4)">
+                                                            <div class="emotion-acquire-cam">
+                                                                <img id="image-sleep" />
+                                                            </div>
+                                                            <p>Add 😴</p>
+                                                        </div>
+                                                        <p id="count-sleep">0 samples</p>
+                                                    </div>
+                                                </div>
+                                                <!--- User acquire ends here -->
+                                                      <!--- Tuner starts here -->
+                                                <div class="emotion-tuner" id="emotion-tuner">
+                                                    <!--- Learning Rate starts here -->
+                                                    <div class="emotion-dropdown">
+                                                        <label>Learning Rate</label>
+                                                        <select id="emotion-learning-rate">
+                                                            <option>0.00001</option>
+                                                            <option selected>0.0001</option>
+                                                            <option>0.001</option>
+                                                            <option>0.003</option>
+                                                        </select>
+                                                    </div>
+                                                    <!--- Learning Rate ends here -->
+                                                    <!--- Batch Size starts here -->
+                                                    <div class="emotion-dropdown">
+                                                        <label>Batch Size</label>
+                                                        <select id="emotion-batch-size">
+                                                            <option>0.05</option>
+                                                            <option selected>0.4</option>
+                                                            <option>0.1</option>
+                                                            <option>1</option>
+                                                        </select>
+                                                    </div>
+                                                    <!--- Batch Size ends here -->
+                                                    <!--- Epochs starts here -->
+                                                    <div class="emotion-dropdown">
+                                                        <label>Epochs</label>
+                                                        <select id="emotion-epochs">
+                                                            <option>10</option>
+                                                            <option selected>20</option>
+                                                            <option>40</option>
+                                                        </select>
+                                                    </div>
+                                                    <!--- Epochs ends here -->
+                                                    <!--- Hidden Units starts here -->
+                                                    <div class="emotion-dropdown">
+                                                        <label>Hidden Units</label>
+                                                        <select id="emotion-hidden-units">
+                                                            <option>10</option>
+                                                            <option selected>100</option>
+                                                            <option>200</option>
+                                                        </select>
+                                                    </div>
+                                                    <!--- Hidden Units ends here -->
+                                                </div>
+                                                <!--- Tuner ends here -->
+
+                                            </div>
+                                            </td>
+                                            <!--- Buttons starts here -->
+                                                </tr>    
+                                            </table>
+                                            
+                                          
+                                        </div>
+
+                                        <img src="assets/img/about-visual.png" alt="About Us">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                         <li class="l-section section">
+                            <div class="sight">
+                                <h2>Sight Prediction</h2>
+                                <a href="sight.html" target="_blank"><button >Demo
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                            <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                                <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                            </g>
+                                        </svg>
+                                        <span class="btn-background"></span>
+                                    </button></a>
+                                <!-- checkout formspree.io for easy form setup -->
+                                 </div>
+                        </li>
+                        <li class="l-section section">
+                            <div class="contact">
+                                <div class="contact--lockup">
+                                    <div class="modal">
+                                        <div class="modal--information">
+                                            <p>Athlone Institute of Technology, Ireland</p>
+                                            <a href="mailto:shubhamkj2405@gmail.com">shubhamkj2405@gmail.com</a>
+                                           
+                                        </div>
+                                        <ul class="modal--options">
+                                            <li><a href="https://github.com/shubhamkj5/">Github</a></li>
+                                            <li><a href="https://www.linkedin.com/in/shubhamkj/">LinkedIn</a></li>
+                                            <li><a href="http://shubhamjain.eu5.net/">Website</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="outer-nav">
+            <li class="is-active">Home</li>
+            <li>Applications</li>
+            <li>Facial Emotion Detection</li>
+            <li>Sight Prediction</li>
+            <li>About</li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+
+    </script>
+    <script src="assets/js/functions-min.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>

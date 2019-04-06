@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CNN for Object Detection</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A website that learns to predict where you are looking at. Written in TensorFlow.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <canvas id="heatMap"></canvas>
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+        <a class="device-notification--logo" href="index.html">
+            <img src="assets/img/logo.png" alt="CNN">
+            <p>Convolutional Neural Networks-Object Detection Applications</p>
+        </a>
+        <p class="device-notification--message">Object Detection has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
+
+    <div class="perspective effect-rotate-left">
+        <div class="container">
+            <div class="outer-nav--return"></div>
+            <div id="viewport" class="l-viewport">
+                <div class="l-wrapper">
+                    <header class="header">
+                        <a class="header--logo" href="index.html">
+                            <img src="assets/img/logo.png" alt="Global">
+                            <p>Object Detection Implementations- CNN</p>
+                        </a>
+
+                       
+                    </header>
+                    <div id="info" data-content="info">
+                        <h3>Hello, Welcome to Sight Prediction Web Application </h3>
+
+                        Please enable your webcam.
+                    </div>
+
+                    <div id="training">
+                        <table>
+                            <tr>
+                                <td>Training examples</td>
+                                <td data-content="n-train">0</td>
+                            </tr>
+                            <tr>
+                                <td>Validation examples</td>
+                                <td data-content="n-val">0</td>
+                            </tr>
+                            <tr>
+                                <td>Epochs trained</td>
+                                <td data-content="n-epochs">0</td>
+                            </tr>
+                            <tr>
+                                <td>Training loss</td>
+                                <td data-content="train-loss">?</td>
+                            </tr>
+                            <tr>
+                                <td>Validation loss</td>
+                                <td data-content="val-loss">?</td>
+                            </tr>
+                        </table>
+                        <div class="buttonwrap">
+                            <div class="buttonrow">
+                                <button id="start-training" disabled>Start Training</button>
+                                <button id="reset-model" disabled>Reset Model</button>
+                            </div>
+                            <div class="buttonrow">
+                                <button id="draw-heatmap" disabled>Draw Heatmap</button>
+                                <button id="clear-heatmap" disabled>Clear Heatmap</button>
+                            </div>
+                            <div class="buttonrow">
+                                <button id="store-data" disabled>Save Dataset</button>
+                                <button id="load-data">Load Dataset</button>
+                                <input type="file" id="data-uploader">
+                            </div>
+                            <div class="buttonrow">
+                                <button id="store-model" disabled>Save Model</button>
+                                <button id="load-model">Load Model</button>
+                                <input type="file" id="model-uploader" multiple>
+                            </div>
+                        </div>
+                    </div>
+
+                    <video id="webcam" width="400" height="300" autoplay></video>
+                    <canvas id="overlay" width="400" height="300"></canvas>
+               
+                <canvas id="eyes" width="50" height="25"></canvas>
+
+                <div id="target"></div>
+ </div>
+                <footer>
+    
+    <a href="index.html" class="rainbow-button">Home</a>
+  </footer>
+            </div>
+        </div>
+    </div>
+
+                <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"></script>
+                <script src="assets/js/sight/vendor/clmtrackr.js"></script>
+                <script src="assets/js/sight/globals.js"></script>
+                <script src="assets/js/sight/ui.js"></script>
+                <script src="assets/js/sight/facetracker.js"></script>
+                <script src="assets/js/sight/mouse.js"></script>
+                <script src="assets/js/sight/dataset.js"></script>
+                <script src="assets/js/sight/training.js"></script>
+                <script src="assets/js/sight/heat.js"></script>
+                <script src="assets/js/sight/main.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
